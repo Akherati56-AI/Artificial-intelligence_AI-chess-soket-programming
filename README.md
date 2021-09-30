@@ -14,7 +14,7 @@ just type **python AI_chess [black | white | '' ] SOCKET**<br />
 remmeber to type above command on another pc with different color <br /> 
 
 ## AI GIF
-![AI GIF](https://github.com/akherati56/AI_chess/blob/master/git-image/AI_Chess.gif)
+![AI GIF](https://github.com/akherati56/AI_chess/blob/master/git-image/AI_Chess.mp4)
 
 ## Socket GIF
 ![Socket GIF](https://github.com/akherati56/AI_chess/blob/master/git-image/Socket_Chess.gif)
