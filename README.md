@@ -17,7 +17,10 @@ remmeber to type above command on another pc with different color <br />
 ![Preview](https://github.com/akherati56/AI_chess/blob/master/Preview)
 
 ## AI GIF
-![Preview](https://github.com/akherati56/AI_chess/blob/master/git-image/AI_chess.gif)
+![AI_chess](https://github.com/akherati56/AI_chess/blob/master/git-image/AI_chess.gif)
+
+## Socket GIF
+![Socket_chess](https://github.com/akherati56/AI_chess/blob/master/git-image/Socket_chess.gif)
 
 ## wood
 ![wood img](https://github.com/akherati56/AI_chess/blob/master/git-image/wood.jpg)
