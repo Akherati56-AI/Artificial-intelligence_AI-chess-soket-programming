@@ -16,6 +16,9 @@ remmeber to type above command on another pc with different color <br />
 ## AI GIF
 ![Preview](https://github.com/akherati56/AI_chess/blob/master/Preview)
 
+## AI GIF
+![Preview](https://github.com/akherati56/AI_chess/blob/master/git-image/AI_chess.gif)
+
 ## wood
 ![wood img](https://github.com/akherati56/AI_chess/blob/master/git-image/wood.jpg)
 
