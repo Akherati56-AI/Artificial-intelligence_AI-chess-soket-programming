@@ -27,8 +27,8 @@ class Anime(Thread):
     
     def set_pos_digit(self , position): #get position on board 
         x , y = position
-        x = int(round(x/100))   
-        y = int(round(y/100))
+        x = int(round((x-50)/100))
+        y = int(round((y-50)/100)) 
         self.position = [x , y] 
     
     def get_type(self): 
@@ -42,6 +42,7 @@ class Anime(Thread):
 
     def drag_init(self):
         x , y = pygame.mouse.get_pos()  
+
         self.set_pos_digit([y , x])
         self.get_type() 
 
@@ -53,8 +54,8 @@ class Anime(Thread):
 
     def drag_done(self , possible_moves):
         x , y = pygame.mouse.get_pos()
-        x = int(round(x/100))
-        y = int(round(y/100))        
+        x = int(round((x-50)/100))
+        y = int(round((y-50)/100))       
         for possible_move in possible_moves: 
             if x == possible_move[0] and y == possible_move[1]: 
                 self.S.play()
@@ -68,9 +69,10 @@ class Anime(Thread):
 
     def highlight(self , position): # highlight where the position is
         x , y = position
+        print(x , int(round((x-50)/100)))
         if y < 750:
-            x = int(round(x/100))
-            y = int(round(y/100))
+            x = int(round((x-50)/100))
+            y = int(round((y-50)/100))
             pygame.draw.rect(screen, GREEN, (100 * x, 100 * y, 100, 100), 5)
         
     def highlight_possible_move(self , possible_move):
