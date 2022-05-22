@@ -69,8 +69,8 @@ class Anime(Thread):
 
     def highlight(self , position): # highlight where the position is
         x , y = position
-        print(x , int(round((x-50)/100)))
-        if y < 750:
+        #print(f'y:{y} y:{int(round((y-50)/100))} x:{x} x:{int(round((x-50)/100))}')
+        if y < 799:
             x = int(round((x-50)/100))
             y = int(round((y-50)/100))
             pygame.draw.rect(screen, GREEN, (100 * x, 100 * y, 100, 100), 5)

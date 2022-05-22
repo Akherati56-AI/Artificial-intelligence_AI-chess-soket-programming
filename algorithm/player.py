@@ -16,11 +16,13 @@ class Player(Move):
     def can_move(self):
         return self.round
 
-    def next_round(self):
-        if self.round:
+    def next_round(self,t):
+        if (self.round == True): 
             self.round = False
-        else :
+            t.round = 'please wait'
+        else : 
             self.round = True
+            t.round = 'your turn'
      
     def start_first(self):
         if self.team[0] == 'w':

@@ -57,8 +57,8 @@ class GUI():
             Move.p = 'w'
             threading.Thread(target=p1.move).start()
         
-            p1.next_round()
-            p2.next_round()
+            p1.next_round(t)
+            p2.next_round(t)
 
         while not game_exit:  
             chess_board.draw_board()
@@ -76,8 +76,8 @@ class GUI():
                         chess_board.reset_board(team2) 
                         history = []
                         t.reset()
-                        p1.next_round()
-                        p2.next_round() 
+                        p1.next_round(t)
+                        p2.next_round(t) 
                         algorithm.check = False
                     elif event.key == pygame.K_q:
                         game_exit = True
@@ -111,8 +111,9 @@ class GUI():
                             so = sock() 
                             so.send()   
                             so.close()    
-                        p1.next_round()
-                        p2.next_round()
+                        print('can move 1')
+                        p1.next_round(t)
+                        p2.next_round(t)
 
                     drag = False
 
@@ -130,9 +131,9 @@ class GUI():
                    
             if (p1.can_move()):
                 threading.Thread(target=p1.move).start()
-                
-                p1.next_round()
-                p2.next_round()       
+                print('can move 2')
+                p1.next_round(t)
+                p2.next_round(t)       
             
             if algorithm.check:
                 pygame.draw.rect(screen, RED, (100 * algorithm.king_X_pos, 100 * algorithm.king_Y_pos, 100, 100), 5)

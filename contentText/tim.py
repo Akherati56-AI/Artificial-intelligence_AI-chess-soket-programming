@@ -9,6 +9,7 @@ class Tim(Thread):
         self.min = 0
         self.sec = 0
         self.text = self.font.render(str(self.min)+':'+str(self.sec), True, BLACK)  
+        self.round = 'your turn'
 
     def run(self): 
         global game_exit
@@ -18,8 +19,11 @@ class Tim(Thread):
 
     def show(self):
         pygame.draw.rect(screen, BLACK, (0, 100 * 8, 800 , 200))
+        screen.blit(self.text, (50 ,825)) 
 
-        screen.blit(self.text, (50 ,825))
+        text = self.font.render(self.round, True, WHITE)  
+        screen.blit(text, (250 ,825))
+  
  
     def counter(self):
         self.sec += 1
