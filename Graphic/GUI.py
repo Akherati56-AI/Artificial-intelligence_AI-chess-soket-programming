@@ -126,7 +126,7 @@ class GUI():
 
             chess_board.draw_piece()
 
-            if drag:                                        # i check drag two time beacuse if i merge them then in the result the draged piece show under enemy solder
+            if drag:                                                # i check drag two time beacuse if i merge them then in the result the draged piece show under enemy solder
                 animation.drag(pygame.mouse.get_pos())              # in the other hand if i create piece first the highlight will stay on piece so player cant see piece
                    
             if (p1.can_move()):
